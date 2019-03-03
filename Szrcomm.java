@@ -1,8 +1,3 @@
-import java.lang.Object;
-import java.io.*;
-import java.net.*;
-import org.w3c.dom.*;
-import java.util.*;
 
 public class szrcomm {
     // constants variables declaretion
