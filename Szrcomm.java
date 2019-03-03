@@ -1,5 +1,4 @@
 import java.lang.Object;
-import oracle.xml.parser.v2.*;
 import java.io.*;
 import java.net.*;
 import org.w3c.dom.*;
