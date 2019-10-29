@@ -71,29 +71,29 @@ public class szrcomm {
     // Extra Activity
     public static final String Activity_Type_Code	= "SA";   // SA	Student Activity Type Code
 
-    public static final String str_devide 	    	= "|";
-    public static final String str_2_devide       	= "||";
-    public static final String str_3_devide     	= "|||";
-    public static final String str_4_devide      	= "||||";
-    public static final String str_5_devide	    	= "|||||";
-    public static final String str_6_devide	    	= "||||||";
-    public static final String str_7_devide     	= "|||||||";
-    public static final String str_8_devide     	= "||||||||";
-    public static final String str_9_devide      	= "|||||||||";
-    public static final String str_10_devide      	= "||||||||||";
-    public static final String str_11_devide      	= "|||||||||||";
-    public static final String str_12_devide      	= "||||||||||||";
-    public static final String str_13_devide      	= "|||||||||||||";
-    public static final String str_14_devide      	= "||||||||||||||";
-    public static final String str_15_devide      	= "|||||||||||||||";
-    public static final String str_16_devide      	= "||||||||||||||||";
-    public static final String str_17_devide      	= "|||||||||||||||||";
-    public static final String str_18_devide      	= "||||||||||||||||||";
-    public static final String str_19_devide      	= "|||||||||||||||||||";
-    public static final String str_20_devide      	= "||||||||||||||||||||";
-    public static final String str_22_devide      	= "||||||||||||||||||||||";
-    public static final String str_31_devide      	= "|||||||||||||||||||||||||||||||";
-    public static final String str_36_devide      	= "||||||||||||||||||||||||||||||||||||";
+    public static final String str_divide 	    	= "|";
+    public static final String str_2_divide       	= "||";
+    public static final String str_3_divide     	= "|||";
+    public static final String str_4_divide      	= "||||";
+    public static final String str_5_divide	    	= "|||||";
+    public static final String str_6_divide	    	= "||||||";
+    public static final String str_7_divide     	= "|||||||";
+    public static final String str_8_divide     	= "||||||||";
+    public static final String str_9_divide      	= "|||||||||";
+    public static final String str_10_divide      	= "||||||||||";
+    public static final String str_11_divide      	= "|||||||||||";
+    public static final String str_12_divide      	= "||||||||||||";
+    public static final String str_13_divide      	= "|||||||||||||";
+    public static final String str_14_divide      	= "||||||||||||||";
+    public static final String str_15_divide      	= "|||||||||||||||";
+    public static final String str_16_divide      	= "||||||||||||||||";
+    public static final String str_17_divide      	= "|||||||||||||||||";
+    public static final String str_18_divide      	= "||||||||||||||||||";
+    public static final String str_19_divide      	= "|||||||||||||||||||";
+    public static final String str_20_divide      	= "||||||||||||||||||||";
+    public static final String str_22_divide      	= "||||||||||||||||||||||";
+    public static final String str_31_divide      	= "|||||||||||||||||||||||||||||||";
+    public static final String str_36_divide      	= "||||||||||||||||||||||||||||||||||||";
 
 
 
@@ -312,7 +312,7 @@ public class szrcomm {
 		str_day = "" + int_day;
 
         head_str = head_str + "HEAD"
-                 + str_devide + str_year 
+                 + str_divide + str_year 
 		 + str_month + str_day + "|189|COMMAPPUG|public_senderId|00|USF_COMMAPP|010913|0823|PS|||";
        
        if(head_count == 0){ 
@@ -333,13 +333,13 @@ public class szrcomm {
    String str_value = "";
    String str_attach = "";
 	str_attach = "IN1_440"
-        	    +  str_devide + Person_Qualify_Code
-		    + str_devide + Person_Name_Type_Code
-                    + str_devide + Person_Self_Code
-		    + str_2_devide;
-        str_value = str_devide + "18"+ str_devide ;
+        	    +  str_divide + Person_Qualify_Code
+		    + str_divide + Person_Name_Type_Code
+                    + str_divide + Person_Self_Code
+		    + str_2_divide;
+        str_value = str_divide + "18"+ str_divide ;
         
-        if(!str_value.equals(str_2_devide)){
+        if(!str_value.equals(str_2_divide)){
 		str_attach = str_attach + str_value;
    		attach_string_totxt(str_attach);
 	}
@@ -358,24 +358,24 @@ public class szrcomm {
         
    	str_par_type = theDoc.valueOf(str_relationship + "/Parent_1_Type");
         if(str_par_type.equals("Mother")){
-           str_value =  str_devide + Person_Qualify_Code
-		    + str_devide + Person_Name_Type_Code
-                    + str_devide + Person_Self_Code
-		    + str_2_devide +str_devide + "32" + str_devide;
+           str_value =  str_divide + Person_Qualify_Code
+		    + str_divide + Person_Name_Type_Code
+                    + str_divide + Person_Self_Code
+		    + str_2_divide +str_divide + "32" + str_divide;
  
         }
         else if(str_par_type.equals("Father")){
-           str_value =  str_devide + Person_Qualify_Code
-		    + str_devide + Person_Name_Type_Code
-                    + str_devide + Person_Self_Code
-		    + str_2_devide +str_devide + "33" + str_devide;
+           str_value =  str_divide + Person_Qualify_Code
+		    + str_divide + Person_Name_Type_Code
+                    + str_divide + Person_Self_Code
+		    + str_2_divide +str_divide + "33" + str_divide;
  
         }
         else if(str_par_type.equals("Legal Guardian")){
-           str_value =  str_devide + Person_Qualify_Code
-		    + str_devide + Person_Name_Type_Code
-                    + str_devide + Person_Self_Code
-		    + str_2_devide +str_devide + "03" + str_devide;
+           str_value =  str_divide + Person_Qualify_Code
+		    + str_divide + Person_Name_Type_Code
+                    + str_divide + Person_Self_Code
+		    + str_2_divide +str_divide + "03" + str_divide;
  
         }
         
@@ -400,8 +400,8 @@ public class szrcomm {
    	 str_value = theDoc.valueOf(str_name + "/First_name");
         if(!str_value.equals("")){ 
    		str_attach = "IN2_440" 
-			   + str_devide + FIRST_NAME_IND
-			   + str_devide + str_value;
+			   + str_divide + FIRST_NAME_IND
+			   + str_divide + str_value;
     
 		attach_string_totxt(str_attach);
         }
@@ -409,16 +409,16 @@ public class szrcomm {
    	 str_value = theDoc.valueOf(str_name + "/Middle_name");
         if(!str_value.equals("")){ 
    		str_attach = "IN2_440" 
-			   + str_devide + MIDDLE_NAME1_IND
-			   + str_devide + str_value;
+			   + str_divide + MIDDLE_NAME1_IND
+			   + str_divide + str_value;
   		attach_string_totxt(str_attach);
         } 
 
    	 str_value = theDoc.valueOf(str_name + "/Last_name");
         if(!str_value.equals("")){ 
    		str_attach = "IN2_440"
-			   + str_devide + LAST_NAME_IND
-			   + str_devide + str_value;
+			   + str_divide + LAST_NAME_IND
+			   + str_divide + str_value;
   		attach_string_totxt(str_attach);
         } 
         // prefered name 
@@ -426,8 +426,8 @@ public class szrcomm {
          
         if(!str_value.equals("")){ 
    		str_attach = "IN2_440" 
-			   + str_devide + PREFERED_NAME_IND
-			   + str_devide + str_value;
+			   + str_divide + PREFERED_NAME_IND
+			   + str_divide + str_value;
   		attach_string_totxt(str_attach);
         } 
    }  
@@ -447,8 +447,8 @@ public class szrcomm {
    	str_value = theDoc.valueOf(str_name + "/Parent_1_First_Name");
    
    		str_attach = "IN2_440" 
-			   + str_devide + FIRST_NAME_IND
-			   + str_devide;
+			   + str_divide + FIRST_NAME_IND
+			   + str_divide;
     
         if(!str_value.equals("")){
 		str_attach = str_attach + str_value;
@@ -458,8 +458,8 @@ public class szrcomm {
    	str_value = theDoc.valueOf(str_name + "/Parent_1_Middle");
        
    		str_attach = "IN2_440" 
-			   + str_devide + MIDDLE_NAME1_IND
-			   + str_devide ;
+			   + str_divide + MIDDLE_NAME1_IND
+			   + str_divide ;
        
         if(!str_value.equals("")){
 		str_attach = str_attach + str_value;
@@ -468,8 +468,8 @@ public class szrcomm {
    	str_value = theDoc.valueOf(str_name + "/Parent_1_Last_Name");
    	
    		str_attach = "IN2_440"
-			   + str_devide + LAST_NAME_IND
-			   + str_devide ;
+			   + str_divide + LAST_NAME_IND
+			   + str_divide ;
         if(!str_value.equals("")){
 		str_attach = str_attach + str_value;
    		attach_string_totxt(str_attach);
@@ -485,9 +485,9 @@ public class szrcomm {
    String str_value = "";
    String str_attach = "";
         str_attach = str_ref;
-   	str_value = str_devide + SSN_ID_IND + str_devide + remove_ssn_hyphen(theDoc.valueOf(str_id_no + "/SSN"))
-		   + str_devide;
-        str_attach = str_attach +  str_value + str_devide;
+   	str_value = str_divide + SSN_ID_IND + str_divide + remove_ssn_hyphen(theDoc.valueOf(str_id_no + "/SSN"))
+		   + str_divide;
+        str_attach = str_attach +  str_value + str_divide;
                 // str_attach = str_attach +  str_value;
 	         attach_string_totxt(str_attach);
 
@@ -528,7 +528,7 @@ public class szrcomm {
          if (str_visa.equals("") || str_visa.equals("N"))
              str_visa = "F1";
 
-   	 str_value = str_devide + VISA_TYPE_IND + str_devide + str_visa	+ str_devide + "Visa Type";
+   	 str_value = str_divide + VISA_TYPE_IND + str_divide + str_visa	+ str_divide + "Visa Type";
 
          if (!str_visa.equals("")){
 
@@ -565,10 +565,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
    String str_Other= ""; 
    
    str_attach = "DMG_440"
-		+ str_devide + Date_Time_Qualify_Code;     // D8
+		+ str_divide + Date_Time_Qualify_Code;     // D8
 
    str_value = process_birthdate( theDoc.valueOf(str_demo + "/Date_of_birth"));   // required fields
-   str_attach = str_attach + str_devide + str_value;
+   str_attach = str_attach + str_divide + str_value;
   
    str_value = theDoc.valueOf(str_demo + "/Sex");
    if  (str_value.equals("F"))
@@ -577,10 +577,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
          str_value = "M";
    else  
          str_value = "U";
-   str_attach = str_attach + str_devide + str_value;
+   str_attach = str_attach + str_divide + str_value;
 
    // no marital data
-   str_attach = str_attach + str_devide;
+   str_attach = str_attach + str_divide;
    
    // ethnicity
   
@@ -588,7 +588,7 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
    //Race or Ethnicity Code
    str_value = "Y";    
-   str_attach = str_attach + str_devide + str_value;
+   str_attach = str_attach + str_divide + str_value;
    
    // get_Citizenship_Status_Code
    str_value = theDoc.valueOf(str_demo + "/Citizenship_status");
@@ -604,7 +604,7 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
    else 
          str_citizen = "2";
 
-   str_attach = str_attach + str_devide + str_citizen;
+   str_attach = str_attach + str_divide + str_citizen;
    
    // DMG 07  country of citizen 
    // str_value = theDoc.valueOf(str_demo + "/DualCitizenshipCountry1");
@@ -614,18 +614,18 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
    else
           str_value = theDoc.valueOf(str_demo + "/Citizenships");
           
-   str_attach = str_attach + str_devide + country_transfer(str_value);
+   str_attach = str_attach + str_divide + country_transfer(str_value);
    // three |||
-   str_attach = str_attach + str_3_devide;
+   str_attach = str_attach + str_3_divide;
    // DMG 11 country of birth
    //str_value = theDoc.valueOf(str_demo + "/BirthCity");
-   //str_attach = str_attach + str_devide;
+   //str_attach = str_attach + str_divide;
    //str_value = theDoc.valueOf(str_demo + "/BirthState");
-   //str_attach = str_attach + str_value + str_devide;
+   //str_attach = str_attach + str_value + str_divide;
    
    // DMG country of Birth
    str_value = country_transfer(theDoc.valueOf(str_demo + "/Birth_country"));
-   str_attach = str_attach + str_value + str_4_devide;
+   str_attach = str_attach + str_value + str_4_divide;
 
    str_lang1 = theDoc.valueOf(str_demo + "/Language_1");
    str_lang2 = theDoc.valueOf(str_demo + "/Language_2");
@@ -667,7 +667,7 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
                  str_value = "XXX";
  
    str_attach = str_attach + str_value;
-   str_attach = str_attach + str_7_devide;
+   str_attach = str_attach + str_7_divide;
    attach_string_totxt(str_attach); 
   }   
    
@@ -685,8 +685,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         str_attach = "III_440";
         //str_religion = theDoc.valueOf(str_relg + "/Religious_preference");
 	str_religion = theDoc.valueOf(str_relg + "/Religious_preference");
-         str_value = str_devide + religion_transfer(str_religion) 
-		    + str_devide;
+         str_value = str_divide + religion_transfer(str_religion) 
+		    + str_divide;
         if (!str_religion.equals("")){
         	str_attach = str_attach + str_value;
    		attach_string_totxt(str_attach);
@@ -739,15 +739,15 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_state.length()>3)
 	        str_state = str_state.substring(0, 3); 
 
-         str_value = str_devide + str_address1 
-                  + str_devide + str_address2
-   		  + str_devide + str_city
-  	         + str_devide + str_state
-   		  + str_devide + str_zip
-   		  + str_devide + country_transfer(str_country)
-        	  + str_devide + "p" 
-		  + str_devide;
-        if (!str_value.equals(str_8_devide) && !str_value.equals("|||||||p|")){
+         str_value = str_divide + str_address1 
+                  + str_divide + str_address2
+   		  + str_divide + str_city
+  	         + str_divide + str_state
+   		  + str_divide + str_zip
+   		  + str_divide + country_transfer(str_country)
+        	  + str_divide + "p" 
+		  + str_divide;
+        if (!str_value.equals(str_8_divide) && !str_value.equals("|||||||p|")){
         	str_attach = str_attach + str_value;
    		attach_string_totxt(str_attach);
 	}
@@ -796,15 +796,15 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_state.length()>3)
 	        str_state = str_state.substring(0, 3); 
 
-        str_value = str_devide + str_address1 
-                  + str_devide + str_address2 
-   		  + str_devide + str_city
-  	         + str_devide + str_state
-   		  + str_devide + str_zip
-   		  + str_devide + country_transfer(str_country)
-        	  + str_devide + "M" 
-		  + str_devide;
-        if (!str_value.equals(str_8_devide) && !str_value.equals("|||||||M|")){
+        str_value = str_divide + str_address1 
+                  + str_divide + str_address2 
+   		  + str_divide + str_city
+  	         + str_divide + str_state
+   		  + str_divide + str_zip
+   		  + str_divide + country_transfer(str_country)
+        	  + str_divide + "M" 
+		  + str_divide;
+        if (!str_value.equals(str_8_divide) && !str_value.equals("|||||||M|")){
         	str_attach = str_attach + str_value;
    		attach_string_totxt(str_attach);
 	}
@@ -858,14 +858,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_state.length()>3)
 	        str_state = str_state.substring(0, 3); 
 
-          str_value = str_devide + str_address1 
-                  + str_devide + str_address2
-   		  + str_devide + str_city
-  	         + str_devide + str_state
-   		  + str_devide + str_zip
-   		  + str_devide + country_transfer(str_country)
-        	  + str_devide + "1" 
-		  + str_devide;
+          str_value = str_divide + str_address1 
+                  + str_divide + str_address2
+   		  + str_divide + str_city
+  	         + str_divide + str_state
+   		  + str_divide + str_zip
+   		  + str_divide + country_transfer(str_country)
+        	  + str_divide + "1" 
+		  + str_divide;
         }
         else if(str_sameAddress.equals("0")){
           str_address1 = theDoc.valueOf(str_address + "/Parent_1_Address_-_Address1");
@@ -896,14 +896,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_state.length()>3)
 	        str_state = str_state.substring(0, 3);
 
-           str_value = str_devide + str_address1 
-                  + str_devide + str_address2
-   		  + str_devide + str_city
-  	          + str_devide + str_state
-   		  + str_devide + str_zip 
-   		  + str_devide + country_transfer(str_country)
-        	  + str_devide + "1" 
-		  + str_devide;
+           str_value = str_divide + str_address1 
+                  + str_divide + str_address2
+   		  + str_divide + str_city
+  	          + str_divide + str_state
+   		  + str_divide + str_zip 
+   		  + str_divide + country_transfer(str_country)
+        	  + str_divide + "1" 
+		  + str_divide;
         }
  
         if (!str_value.equals("") && !str_value.equals("|||||||1|")){
@@ -961,14 +961,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_state.length()>3)
 	        str_state = str_state.substring(0, 3);
 
-          str_value = str_devide + str_address1 
-                  + str_devide + str_address2
-   		  + str_devide + str_city
-  	         + str_devide + str_state
-   		  + str_devide + str_zip
-   		  + str_devide + country_transfer(str_country)
-        	  + str_devide + "2" 
-		  + str_devide;
+          str_value = str_divide + str_address1 
+                  + str_divide + str_address2
+   		  + str_divide + str_city
+  	         + str_divide + str_state
+   		  + str_divide + str_zip
+   		  + str_divide + country_transfer(str_country)
+        	  + str_divide + "2" 
+		  + str_divide;
         }
        else if(str_sameAddress.equals("0")){
           str_address1 = theDoc.valueOf(str_address + "/Parent_2_Address_-_Address1");
@@ -999,14 +999,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           if (str_state.length()>3)
 	        str_state = str_state.substring(0, 3);
 
-           str_value = str_devide + str_address1 
-                  + str_devide + str_address2
-   		  + str_devide + str_city
-  	          + str_devide + str_state
-   		  + str_devide + str_zip 
-   		  + str_devide + country_transfer(str_country)
-        	  + str_devide + "2" 
-		  + str_devide;
+           str_value = str_divide + str_address1 
+                  + str_divide + str_address2
+   		  + str_divide + str_city
+  	          + str_divide + str_state
+   		  + str_divide + str_zip 
+   		  + str_divide + country_transfer(str_country)
+        	  + str_divide + "2" 
+		  + str_divide;
         }
 
         if (!str_value.equals("") && !str_value.equals("|||||||2|")){
@@ -1048,8 +1048,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         str_value =  theDoc.valueOf(str_xpath + "/Preferred_phone_number");
         if (str_value != null && (!str_value.equals("")) ) 
            {  
-                str_value = str_devide + str_prefer_type 
-			  + str_devide + phone_number_cleanup(str_value);
+                str_value = str_divide + str_prefer_type 
+			  + str_divide + phone_number_cleanup(str_value);
    	      	str_attach = str_attach + str_value;
               	attach_string_totxt(str_attach);
            }
@@ -1059,8 +1059,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         str_value =  theDoc.valueOf(str_xpath + "/Alternate_phone_number");
         if (str_value != null && (!str_value.equals("")) ) 
            {  
-                str_value = str_devide + str_alt_type 
-			  + str_devide + phone_number_cleanup(str_value);
+                str_value = str_divide + str_alt_type 
+			  + str_divide + phone_number_cleanup(str_value);
    	      	str_attach = str_attach + str_value;
               	attach_string_totxt(str_attach);
            }
@@ -1071,8 +1071,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_value != null && (!str_value.equals("")) ) 
            {  
 	        // P1 as parent1 phone	
-                str_value = str_devide + "P1"
-			  + str_devide + phone_number_cleanup(str_value);
+                str_value = str_divide + "P1"
+			  + str_divide + phone_number_cleanup(str_value);
    	      	str_attach = str_attach + str_value;
               	attach_string_totxt(str_attach);
            }
@@ -1082,8 +1082,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         if (str_value != null && (!str_value.equals("")) ) 
            {  
 	        // P1 as parent2 phone	
-                str_value = str_devide + "P2"
-			  + str_devide + phone_number_cleanup(str_value);
+                str_value = str_divide + "P2"
+			  + str_divide + phone_number_cleanup(str_value);
    	      	str_attach = str_attach + str_value;
               	attach_string_totxt(str_attach);
            }
@@ -1093,8 +1093,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
    	str_value = theDoc.valueOf(str_xpath + "/Email_address");
         if (str_value != null && (!str_value.equals("")) ) 
            {  
-		str_value = str_devide + Email_Code 
-			  + str_devide + str_value;
+		str_value = str_divide + Email_Code 
+			  + str_divide + str_value;
    	      	str_attach = str_attach + str_value;
               	attach_string_totxt(str_attach);
            }
@@ -1122,13 +1122,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
    		str_value =  theDoc.valueOf(str_term + "/Preferred_start_term");
        }
        if (!str_value.equals(""))
-   		str_value = str_devide + banner_termcode_to_year(str_value) 
-		  + str_4_devide + str_level_number + str_4_devide;
+   		str_value = str_divide + banner_termcode_to_year(str_value) 
+		  + str_4_divide + str_level_number + str_4_divide;
        else
-		str_value = str_devide + "20991001" 
-		  + str_4_devide + str_level_number + str_4_devide;
+		str_value = str_divide + "20991001" 
+		  + str_4_divide + str_level_number + str_4_divide;
 
-	if(str_value != str_9_devide){
+	if(str_value != str_9_divide){
 		str_attach = str_attach + str_value;
    		attach_string_totxt(str_attach);
 	}
@@ -1150,8 +1150,8 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         str_stu_type= theDoc.valueOf(str_planned_major + "/Student_Type");
 
         str_attach = "FOS_1280"
-		   + str_devide + Study_Type_Code  
-		   + str_devide + Study_Code_Set_Ind;
+		   + str_divide + Study_Type_Code  
+		   + str_divide + Study_Code_Set_Ind;
         if (str_stu_type.equals("TR")){
         	str_program =  theDoc.valueOf(str_planned_major+ "/Academic_Program_FromTr");
         }else{
@@ -1159,9 +1159,9 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
         }
         //str_major = str_program;
         str_major = ay_major_capture(str_program.trim()); 
-        str_value = str_devide + str_major
-		  + str_2_devide;
-	 if (!str_value.equals(str_3_devide)){           // this may not need
+        str_value = str_divide + str_major
+		  + str_2_divide;
+	 if (!str_value.equals(str_3_divide)){           // this may not need
 	   str_attach = str_attach + str_value;
 	    attach_string_totxt(str_attach);
         }
@@ -1237,11 +1237,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
            str_high_ceeb = theDoc.valueOf(str_highschool + "/School_lookup_-_CeebCode");
            str_high_end_date = theDoc.valueOf(str_highschool + "/Graduation_date");
 
-	    str_value = str_devide + "B18"  
-		   + str_devide + CM_Date_Format
-                 + str_devide + format_mdy_date(str_high_end_date)
-		   + str_10_devide;
-            str_empty = str_devide +"B18" + str_devide + CM_Date_Format + str_11_devide;
+	    str_value = str_divide + "B18"  
+		   + str_divide + CM_Date_Format
+                 + str_divide + format_mdy_date(str_high_end_date)
+		   + str_10_divide;
+            str_empty = str_divide +"B18" + str_divide + CM_Date_Format + str_11_divide;
        if (!str_high_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1253,11 +1253,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             if(n == 5) {
                    str_high_ceeb = "0"+str_high_ceeb;
             }
-	       str_value = str_devide + HigSchool_Type
-                   + str_devide 
-		     + str_devide + Institution_Code_Qualify
-                   + str_devide + str_high_ceeb 
-                   + str_2_devide;  
+	       str_value = str_divide + HigSchool_Type
+                   + str_divide 
+		     + str_divide + Institution_Code_Qualify
+                   + str_divide + str_high_ceeb 
+                   + str_2_divide;  
       		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
         }
@@ -1350,11 +1350,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
            str_high_ceeb = theDoc.valueOf(str_highschool + "/TR_Secondary_school_1_lookup_-_CeebCode");
            str_high_end_date = theDoc.valueOf(str_highschool + "/TR_Secondary_school_1_to_date");
      
-	    str_value = str_devide + "B18"  
-		   + str_devide + CM_Date_Format
-                 + str_devide + format_mdy_date(str_high_end_date)
-		   + str_10_devide;
-            str_empty = str_devide +"B18" + str_devide + CM_Date_Format + str_11_devide;
+	    str_value = str_divide + "B18"  
+		   + str_divide + CM_Date_Format
+                 + str_divide + format_mdy_date(str_high_end_date)
+		   + str_10_divide;
+            str_empty = str_divide +"B18" + str_divide + CM_Date_Format + str_11_divide;
        if (!str_high_ceeb.equals("")){
            if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
@@ -1368,14 +1368,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
                    str_high_ceeb = "0"+str_high_ceeb;
              }
 
-	     str_value = str_devide + HigSchool_Type
-                   + str_devide 
-		   + str_devide + Institution_Code_Qualify
-                   + str_devide + str_high_ceeb 
-                   + str_2_devide;  
+	     str_value = str_divide + HigSchool_Type
+                   + str_divide 
+		   + str_divide + Institution_Code_Qualify
+                   + str_divide + str_high_ceeb 
+                   + str_2_divide;  
 	
-            str_empty = str_devide + HigSchool_Type + str_2_devide 
-		   + Institution_Code_Qualify + str_3_devide;
+            str_empty = str_divide + HigSchool_Type + str_2_divide 
+		   + Institution_Code_Qualify + str_3_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1400,11 +1400,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
            str_high_ceeb = theDoc.valueOf(str_highschool + "/School_2_lookup_-_CeebCode");
            str_high_end_date = theDoc.valueOf(str_highschool + "/School_2_to_date");
 
-	   str_value = str_devide + "B18"  
-		   + str_devide + CM_Date_Format
-                   + str_devide + format_month_year_date(str_high_end_date)
-		   + str_10_devide;
-            str_empty = str_devide +"B18" + str_devide + CM_Date_Format + str_11_devide;
+	   str_value = str_divide + "B18"  
+		   + str_divide + CM_Date_Format
+                   + str_divide + format_month_year_date(str_high_end_date)
+		   + str_10_divide;
+            str_empty = str_divide +"B18" + str_divide + CM_Date_Format + str_11_divide;
        if (!str_high_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1417,13 +1417,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
                    str_high_ceeb = "0"+str_high_ceeb;
             }
         
-	     str_value = str_devide + HigSchool_Type
-                   + str_devide 
-		     + str_devide + Institution_Code_Qualify
-                   + str_devide + str_high_ceeb 
-                   + str_2_devide;  
-            str_empty = str_devide + HigSchool_Type + str_2_devide 
-		   + Institution_Code_Qualify + str_3_devide;
+	     str_value = str_divide + HigSchool_Type
+                   + str_divide 
+		     + str_divide + Institution_Code_Qualify
+                   + str_divide + str_high_ceeb 
+                   + str_2_divide;  
+            str_empty = str_divide + HigSchool_Type + str_2_divide 
+		   + Institution_Code_Qualify + str_3_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1447,11 +1447,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             // use the stand high school type   B18	Standard high school diploma
            str_high_ceeb = theDoc.valueOf(str_highschool + "/TR_Secondary_school_2_lookup_-_CeebCode");
            str_high_end_date = theDoc.valueOf(str_highschool + "/TR_Secondary_school_2_to_date");
-	    str_value = str_devide + "B18"  
-		   + str_devide + CM_Date_Format
-                   + str_devide + format_month_year_date(str_high_end_date)
-		   + str_10_devide;
-            str_empty = str_devide +"B18" + str_devide + CM_Date_Format + str_11_devide;
+	    str_value = str_divide + "B18"  
+		   + str_divide + CM_Date_Format
+                   + str_divide + format_month_year_date(str_high_end_date)
+		   + str_10_divide;
+            str_empty = str_divide +"B18" + str_divide + CM_Date_Format + str_11_divide;
         if (!str_high_ceeb.equals("")){
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
@@ -1464,14 +1464,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             if(n == 5) {
                    str_high_ceeb = "0"+str_high_ceeb;
             }
-	     str_value = str_devide + HigSchool_Type
-                   + str_devide 
-		   + str_devide + Institution_Code_Qualify
-                   + str_devide + str_high_ceeb 
-                   + str_2_devide;  
+	     str_value = str_divide + HigSchool_Type
+                   + str_divide 
+		   + str_divide + Institution_Code_Qualify
+                   + str_divide + str_high_ceeb 
+                   + str_2_divide;  
 
-            str_empty = str_devide + HigSchool_Type + str_2_devide 
-		   + Institution_Code_Qualify + str_3_devide;
+            str_empty = str_divide + HigSchool_Type + str_2_divide 
+		   + Institution_Code_Qualify + str_3_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1495,11 +1495,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             // use the stand high school type   B18	Standard high school diploma
            str_high_ceeb = theDoc.valueOf(str_highschool + "/School_3_lookup_-_CeebCode");
            str_high_end_date = format_month_year_date(theDoc.valueOf(str_highschool + "/School_3_to_date"));
-	    str_value = str_devide + "B18"  
-		   + str_devide + CM_Date_Format
-                   + str_devide + str_high_end_date
-		   + str_10_devide;
-            str_empty = str_devide +"B18" + str_devide + CM_Date_Format + str_11_devide;
+	    str_value = str_divide + "B18"  
+		   + str_divide + CM_Date_Format
+                   + str_divide + str_high_end_date
+		   + str_10_divide;
+            str_empty = str_divide +"B18" + str_divide + CM_Date_Format + str_11_divide;
        if (!str_high_ceeb.equals("")){
             if (!str_high_end_date.equals("")){
 		str_attach = str_attach + str_value;
@@ -1512,13 +1512,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             if(n == 5) {
                    str_high_ceeb = "0"+str_high_ceeb;
             }  
-	      str_value = str_devide + HigSchool_Type + str_2_devide 
+	      str_value = str_divide + HigSchool_Type + str_2_divide 
                    + Institution_Code_Qualify
-                   + str_devide + str_high_ceeb 
-                   + str_2_devide;  
-            str_empty = str_devide + HigSchool_Type + str_2_devide 
+                   + str_divide + str_high_ceeb 
+                   + str_2_divide;  
+            str_empty = str_divide + HigSchool_Type + str_2_divide 
 		     + Institution_Code_Qualify 
-                   + str_3_devide;
+                   + str_3_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1542,11 +1542,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             // use the stand high school type   B18	Standard high school diploma
            str_high_ceeb = theDoc.valueOf(str_highschool + "/TR_Secondary_school_3_lookup_-_CeebCode");
            str_high_end_date = theDoc.valueOf(str_highschool + "/TR_Secondary_school_3_to_date");
-	    str_value = str_devide + "B18"  
-		   + str_devide + CM_Date_Format
-                   + str_devide + format_month_year_date(str_high_end_date)
-		   + str_10_devide;
-            str_empty = str_devide +"B18" + str_devide + CM_Date_Format + str_11_devide;
+	    str_value = str_divide + "B18"  
+		   + str_divide + CM_Date_Format
+                   + str_divide + format_month_year_date(str_high_end_date)
+		   + str_10_divide;
+            str_empty = str_divide +"B18" + str_divide + CM_Date_Format + str_11_divide;
        if (!str_high_ceeb.equals("")){
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
@@ -1560,13 +1560,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
                    str_high_ceeb = "0"+str_high_ceeb;
             }
             str_high_ceeb =  str_high_ceeb;
-	     str_value = str_devide + HigSchool_Type
-                   + str_devide 
-		   + str_devide + Institution_Code_Qualify
-                   + str_devide + str_high_ceeb 
-                   + str_2_devide;  
-            str_empty = str_devide + HigSchool_Type + str_2_devide 
-		   + Institution_Code_Qualify + str_3_devide;
+	     str_value = str_divide + HigSchool_Type
+                   + str_divide 
+		   + str_divide + Institution_Code_Qualify
+                   + str_divide + str_high_ceeb 
+                   + str_2_divide;  
+            str_empty = str_divide + HigSchool_Type + str_2_divide 
+		   + Institution_Code_Qualify + str_3_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1590,36 +1590,36 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           str_attach = "PCL_2200";
 
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_School_lookup_-_CeebCode");
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Entry_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Entry_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Exit_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Exit_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Exit_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;
            
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
        if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
            
           // process first degree 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Entry_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Entry_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_Exit_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
@@ -1627,9 +1627,9 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
           // process first college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ com_degree_cw(theDoc.valueOf(str_prev_inst + "/TR_Degree_type"))
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1652,45 +1652,45 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           // process other first college record
           str_attach = "PCL_2200";
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_lookup_-_CeebCode");
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_from_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_from_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_to_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_to_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_to_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;
            
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
      if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
 
           // process other first degree 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_from_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_from_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_1_to_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
            } // end if
           // process other first college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ "ND"
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1712,45 +1712,45 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           // process other first college record
           str_attach = "PCL_2200";
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_lookup_-_CeebCode");
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_from_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_from_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_to_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_to_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_to_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;
            
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
      if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
 
           // process other first degree 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_from_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_from_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_2_to_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
            } // end if
           // process other first college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ "ND"
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1773,45 +1773,45 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           // process other first college record
           str_attach = "PCL_2200";
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_lookup_-_CeebCode");
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_from_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_from_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_to_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_to_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_to_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;
            
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
      if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
 
           // process other first degree 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_from_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_from_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_Secondary_school_3_to_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
            } // end if
           // process other first college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ "ND"
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1835,45 +1835,45 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           str_attach = "PCL_2200";
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_College_1_lookup_-_CeebCode");
 
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_from_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_from_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_to_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_to_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_to_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;
            
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
      if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
 
           // process other first degree 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_from_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_from_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_1_to_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
            } // end if
           // process other first college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ "ND"
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1895,45 +1895,45 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           // process other second college record
           str_attach = "PCL_2200";
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_College_2_lookup_-_CeebCode");
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_from_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_from_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_to_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_to_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_to_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;
            
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
        if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
 
           // process other second degree 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_from_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_from_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_2_to_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
            } // end if
  	   // process other second college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ "ND"
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -1955,43 +1955,43 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           // process other third college record
           str_attach = "PCL_2200";
           str_school_ceeb = theDoc.valueOf(str_prev_inst + "/TR_College_3_lookup_-_CeebCode");
-          str_value = str_devide + "73" + str_devide
+          str_value = str_divide + "73" + str_divide
                 + "000" + str_school_ceeb
-		+ str_devide + Date_Time_Period 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_from_date")) + "-"
+		+ str_divide + Date_Time_Period 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_from_date")) + "-"
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_to_date")) 
-		+ str_devide + "ND" 
-                + str_devide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_to_date")) 
-		+ str_devide
-		+ str_devide 
-		+ str_devide 
-		+ str_devide
-		+ str_devide 
-		+ str_31_devide;          
-            str_empty_info = str_devide + "73" + str_devide +"000" + str_devide + Date_Time_Period + str_devide + "-" +str_devide + "ND" + str_6_devide
-		+ str_31_devide;
+		+ str_divide + "ND" 
+                + str_divide + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_to_date")) 
+		+ str_divide
+		+ str_divide 
+		+ str_divide 
+		+ str_divide
+		+ str_divide 
+		+ str_31_divide;          
+            str_empty_info = str_divide + "73" + str_divide +"000" + str_divide + Date_Time_Period + str_divide + "-" +str_divide + "ND" + str_6_divide
+		+ str_31_divide;
            if (!str_school_ceeb.equals("")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
           // process other third degrss 
           str_attach = "SES_2400";
-          str_date = str_devide
+          str_date = str_divide
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_from_date")) 
-		+ str_5_devide + "CM" + str_devide 
+		+ str_5_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_from_date")) 
-		+ str_devide + "CM" + str_devide 
+		+ str_divide + "CM" + str_divide 
                 + format_month_year_date(theDoc.valueOf(str_prev_inst + "/TR_College_3_to_date")) 
-		+ str_5_devide; 
-            str_empty_info = str_14_devide; 
+		+ str_5_divide; 
+            str_empty_info = str_14_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_date;
 		attach_string_totxt(str_attach);
            } // end if
           // process other third college degree
           str_attach = "DEG_2520";
-          str_value = str_devide
+          str_value = str_divide
 		+ "ND"
-		+ str_22_devide; 
+		+ str_22_divide; 
            if (!str_date.equals("||||||CM||CM||||||")){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2018,11 +2018,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
  
           // process TST for A01 English 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_English_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_English_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2030,13 +2030,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  ACT01 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A01" + str_2_devide;
+          str_value2 = str_divide + "A01" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACT_English_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACT_English_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2048,11 +2048,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
               
           // process TST for A02 Math 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Math_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Math_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2060,13 +2060,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT02 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A02" + str_2_devide;
+          str_value2 = str_divide + "A02" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACT_Math_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACT_Math_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2077,11 +2077,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST for A03 Math 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Reading_date"))
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Reading_date"))
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2089,13 +2089,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT03 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A03" + str_2_devide;
+          str_value2 = str_divide + "A03" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACT_Reading_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACT_Reading_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2106,11 +2106,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST for A04 Science Reasoning 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Science_date"))
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Science_date"))
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2118,13 +2118,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT04 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A04" + str_2_devide;
+          str_value2 = str_divide + "A04" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACT_Science_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACT_Science_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2135,11 +2135,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST for A05 Composite 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Composite_date"))
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Composite_date"))
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2147,13 +2147,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT05 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A05" + str_2_devide;
+          str_value2 = str_divide + "A05" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACT_Composite_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACT_Composite_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2164,11 +2164,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST for A08 Writing 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Writing_date"))
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACT_Writing_date"))
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2176,19 +2176,19 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT08 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A08" + str_2_devide;
+          str_value2 = str_divide + "A08" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080"; 
           str_a08 =  theDoc.valueOf(str_test + "/ACT_Writing_score");
-          str_value3 = str_2_devide + str_a08;
+          str_value3 = str_2_divide + str_a08;
        
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
 		
-                str_attach3 = str_attach3 + str_2_devide + test_score_transfer(str_a08);
+                str_attach3 = str_attach3 + str_2_divide + test_score_transfer(str_a08);
 		attach_string_totxt(str_attach3);
             }
    }          
@@ -2212,24 +2212,24 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
  
           // process TST 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "ACT Test2" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/ACTTestDate2")) 
-                + str_8_devide;
+          str_value = str_2_divide + "ACT Test2" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/ACTTestDate2")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"ACT Test2" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"ACT Test2" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
             }
           //  ACT01 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A01" + str_2_devide;
+          str_value2 = str_divide + "A01" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACTEnglish2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACTEnglish2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2240,13 +2240,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT02 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A02" + str_2_devide;
+          str_value2 = str_divide + "A02" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACTMath2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACTMath2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2257,13 +2257,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT03 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A03" + str_2_devide;
+          str_value2 = str_divide + "A03" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACTReading2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACTReading2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2274,13 +2274,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT04 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A04" + str_2_devide;
+          str_value2 = str_divide + "A04" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACTScience2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACTScience2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2291,13 +2291,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT05 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A05" + str_2_devide;
+          str_value2 = str_divide + "A05" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/ACTComposite2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/ACTComposite2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2308,19 +2308,19 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  ACT08 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "A08" + str_2_devide;
+          str_value2 = str_divide + "A08" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
           str_a08 = theDoc.valueOf(str_test + "/ACTWriting2");
-          str_value3 = str_2_devide + str_a08; 
+          str_value3 = str_2_divide + str_a08; 
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
 		
-                str_attach3 = str_attach3 + str_2_devide + test_score_transfer(str_a08);
+                str_attach3 = str_attach3 + str_2_divide + test_score_transfer(str_a08);
 		attach_string_totxt(str_attach3);
             }
    }          
@@ -2343,24 +2343,24 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
  
           // process TST for S01 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_CR_Date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_CR_Date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
             }
           //  SAT01 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S01" + str_2_devide;
+          str_value2 = str_divide + "S01" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SAT_CR_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SAT_CR_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2371,11 +2371,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST For S02 Math 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_Math_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_Math_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2383,13 +2383,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  SAT02 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S02" + str_2_devide;
+          str_value2 = str_divide + "S02" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SAT_Math_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SAT_Math_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2400,11 +2400,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST For S07 Wirting 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_Writing_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_Writing_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2412,13 +2412,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  SAT07 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S07" + str_2_devide;
+          str_value2 = str_divide + "S07" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SAT_Writing_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SAT_Writing_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2440,24 +2440,24 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
  
           // process TST for S11 NEW RW
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_NEW_RW_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_NEW_RW_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
             }
           //  SAT01 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S11" + str_2_devide;
+          str_value2 = str_divide + "S11" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SAT_NEW_RW_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SAT_NEW_RW_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2468,11 +2468,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST For S12 NEW Math 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_NEW_Math_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_NEW_Math_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2480,13 +2480,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  SAT02 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S12" + str_2_devide;
+          str_value2 = str_divide + "S12" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SAT_NEW_Math_Score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SAT_NEW_Math_Score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2497,11 +2497,11 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           // process TST For S14 Essay 
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_NEW_Essay_date")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SAT_NEW_Essay_date")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2509,13 +2509,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  SAT07 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S14" + str_2_devide;
+          str_value2 = str_divide + "S14" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SAT_NEW_Essay_score");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SAT_NEW_Essay_score");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2545,24 +2545,24 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
  
           // process TST for S01
           str_attach = "TST_2040";
-          str_value = str_2_devide + "SAT Test2" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/SATITestDate2")) 
-                + str_8_devide;
+          str_value = str_2_divide + "SAT Test2" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/SATITestDate2")) 
+                + str_8_divide;
  
-            str_empty = str_2_devide +"SAT Test2" + str_devide + Test_Date_Format + str_9_devide;
+            str_empty = str_2_divide +"SAT Test2" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
             }
           //  SAT01 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S01" + str_2_devide;
+          str_value2 = str_divide + "S01" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SATIReading2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SATIReading2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2573,13 +2573,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  SAT02 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S02" + str_2_devide;
+          str_value2 = str_divide + "S02" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SATIMath2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SATIMath2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2590,13 +2590,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           
           //  SAT07 SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "S07" + str_2_devide;
+          str_value2 = str_divide + "S07" + str_2_divide;
 
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + theDoc.valueOf(str_test + "/SATIWriting2");
+          str_value3 = str_2_divide + theDoc.valueOf(str_test + "/SATIWriting2");
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2625,10 +2625,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
          
          // process TST2040 for TOEFL for toefl reading TFRS
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_Reading_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_Reading_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2636,14 +2636,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TFRS" + str_2_devide;
+          str_value2 = str_divide + "TFRS" + str_2_divide;
 
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_Reading_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_Reading_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2655,10 +2655,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
          // process TST2040 for TOEFL for toefl reading TFSS
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_speaking_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_speaking_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2666,14 +2666,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TFSS" + str_2_devide;
+          str_value2 = str_divide + "TFSS" + str_2_divide;
 
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_speaking_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_speaking_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2684,10 +2684,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
          // process TST2040 for TOEFL for toefl reading TFLS
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_Listening_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_Listening_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2695,14 +2695,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TFLS" + str_2_devide;
+          str_value2 = str_divide + "TFLS" + str_2_divide;
 
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_Listening_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_Listening_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2713,10 +2713,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
          // process TST2040 for TOEFL for toefl reading TFWS
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_Writing_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_iBT_Writing_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2724,14 +2724,14 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TFWS" + str_2_devide;
+          str_value2 = str_divide + "TFWS" + str_2_divide;
 
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_Writing_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_iBT_Writing_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2762,10 +2762,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
          
          // process TST2040 for TOEFL for toefl reading TOPL
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_Listening_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_Listening_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2773,13 +2773,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TOPL" + str_2_devide;
+          str_value2 = str_divide + "TOPL" + str_2_divide;
      
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_Listening_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_Listening_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2791,10 +2791,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
          // process TST2040 for TOEFL for toefl reading TOPR
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_Reading_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_Reading_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2802,13 +2802,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TOPR" + str_2_devide;
+          str_value2 = str_divide + "TOPR" + str_2_divide;
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_Reading_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_Reading_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2819,10 +2819,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
          // process TST2040 for TOEFL for toefl reading TOPW
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_Structure_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_Structure_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2830,13 +2830,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TOPW" + str_2_devide;
+          str_value2 = str_divide + "TOPW" + str_2_divide;
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_Structure_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_Structure_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2847,10 +2847,10 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
          // process TST2040 for TOEFL for toefl reading TOPC
           str_attach = "TST_2040";
-          str_value = str_2_devide + "TOEFL Test" + str_devide
-                + Test_Date_Format +str_devide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_TWE_date")) 
-                + str_8_devide;
-           str_empty = str_2_devide +"TOEFL Test" + str_devide + Test_Date_Format + str_9_devide;
+          str_value = str_2_divide + "TOEFL Test" + str_divide
+                + Test_Date_Format +str_divide + format_month_year_day(theDoc.valueOf(str_test + "/TOEFL_Paper_TWE_date")) 
+                + str_8_divide;
+           str_empty = str_2_divide +"TOEFL Test" + str_divide + Test_Date_Format + str_9_divide;
             if (!str_value.equals(str_empty)){
 		str_attach = str_attach + str_value;
 		attach_string_totxt(str_attach);
@@ -2858,13 +2858,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
   
           //  TOEFL SBT_2080
           str_attach2 = "SBT_2080";
-          str_value2 = str_devide + "TOPC" + str_2_devide;
+          str_value2 = str_divide + "TOPC" + str_2_divide;
       
           // scores SRE_2080
           str_attach3 = "SRE_2080";
-          str_value3 = str_2_devide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_TWE_score"));
+          str_value3 = str_2_divide + toefl_score_validation(str_test_type, theDoc.valueOf(str_test + "/TOEFL_Paper_TWE_score"));
  
-            str_empty = str_2_devide;
+            str_empty = str_2_divide;
             if (!str_value3.equals(str_empty)){
 		str_attach2 = str_attach2 + str_value2;
 		attach_string_totxt(str_attach2);
@@ -2917,80 +2917,80 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
           str_value7 =  theDoc.valueOf(str_act+ "/Activity_7_name");
 
           str_empty = "";
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type1.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type1)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type1)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value1.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value1)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value1)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type2.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type2)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type2)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value2.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value2)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value2)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type3.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type3)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type3)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value3.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value3)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value3)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type4.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type4)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type4)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value4.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value4)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value4)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type5.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type5)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type5)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value5.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value5)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value5)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type6.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type6)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type6)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value6.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value6)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value6)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type7.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type7)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type7)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value7.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value7)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value7)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
   } 
@@ -3044,91 +3044,91 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
           str_empty = "";
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type1.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type1)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type1)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value1.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value1)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value1)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type2.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type2)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type2)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value2.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value2)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value2)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type3.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type3)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type3)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value3.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value3)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value3)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type4.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type4)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type4)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value4.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value4)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value4)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type5.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type5)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type5)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value5.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value5)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value5)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type6.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type6)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type6)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }  
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value6.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value6)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value6)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type7.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type7)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type7)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value7.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value7)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value7)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
-  	   str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+  	   str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_type8.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_type8)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_type8)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value8.equals(str_empty)){
-                  str_attach = str_attach + activity_transfer(str_value8)+ str_8_devide;
+                  str_attach = str_attach + activity_transfer(str_value8)+ str_8_divide;
                   attach_string_totxt(str_attach);
           }
 
@@ -3152,13 +3152,13 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
 
           str_value =  theDoc.valueOf(str_program + "/Programs");
 
-          str_empty = str_8_devide;
+          str_empty = str_8_divide;
 
-          str_attach = "ATV_1120" + str_devide + "SA" + str_devide;
+          str_attach = "ATV_1120" + str_divide + "SA" + str_divide;
           if (!str_value.equals("")){
                   str_Array =  str_value.split(",");
                   for(int i = 0; i< str_Array.length; i++){
-                  str_out = str_attach + special_program_crosswalk(str_Array[i]) + str_8_devide;
+                  str_out = str_attach + special_program_crosswalk(str_Array[i]) + str_8_divide;
                   attach_string_totxt(str_out);
                  }
           }
@@ -3209,18 +3209,18 @@ void process_demographic(XMLDocument theDoc, String str_demo) throws Exception
             }
 	   
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "10"
-                   + str_devide + "What is your Admit Type?" 
-		   + str_2_devide + str_admt_type;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "10"
+                   + str_divide + "What is your Admit Type?" 
+		   + str_2_divide + str_admt_type;
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	   
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "10"
-                   + str_devide + "What is your Student Type?" 
-		   + str_2_devide + str_stu_type;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "10"
+                   + str_divide + "What is your Student Type?" 
+		   + str_2_divide + str_stu_type;
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
            
@@ -3332,15 +3332,15 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
             // RQS_1600|AQ|41|The race code?||3,5,O,
             // RQS_1600|AQ|42|The new ethnicity code?||6 
           
-          str_attach = "RQS_1600" + str_devide + "AQ"
-                       + str_devide + "41" + str_devide + "The common app race code?" + str_2_devide;
+          str_attach = "RQS_1600" + str_divide + "AQ"
+                       + str_divide + "41" + str_divide + "The common app race code?" + str_2_divide;
           str_attach = str_attach + str_value;
           
           attach_string_totxt(str_attach);
 	  
           
-          str_attach = "RQS_1600" + str_devide + "AQ"
-                       + str_devide + "42" + str_devide + "The common app new ethnicity code?" + str_2_devide;
+          str_attach = "RQS_1600" + str_divide + "AQ"
+                       + str_divide + "42" + str_divide + "The common app new ethnicity code?" + str_2_divide;
           str_attach = str_attach + str_new_ethn;
           
           attach_string_totxt(str_attach);
@@ -3377,15 +3377,15 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
             || (str_lang2.equals("eng") && str_lang2_level.indexOf("F")!= -1)
             || (str_lang3.equals("eng") && str_lang3_level.indexOf("F")!= -1)
                    ){
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "43"
-                   + str_devide + "English first language?" 
-		   + str_2_devide + "Y";
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "43"
+                   + str_divide + "English first language?" 
+		   + str_2_divide + "Y";
         }else{
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "43"
-                   + str_devide + "English first language?" 
-		   + str_2_devide + "N";
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "43"
+                   + str_divide + "English first language?" 
+		   + str_2_divide + "N";
         } 
         str_attach = str_attach + str_value;
         attach_string_totxt(str_attach);
@@ -3413,10 +3413,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         }
 
         if (!str_veretan.equals("N")){
-	   	str_value = str_devide + "AQ"  
-		   + str_devide + "44"
-                   + str_devide + "The common app veteran status?" 
-		   + str_2_devide + str_veretan;
+	   	str_value = str_divide + "AQ"  
+		   + str_divide + "44"
+                   + str_divide + "The common app veteran status?" 
+		   + str_2_divide + str_veretan;
         	str_attach = str_attach + str_value;
         	attach_string_totxt(str_attach);
         }     
@@ -3434,10 +3434,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
    	   str_enrollNo = theDoc.valueOf(str_input + "/EnrollmentNumber");
         
         if (!str_enrollNo.equals("")){
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "45"
-                   + str_devide + "Native EnrollmentNumber?" 
-		   + str_2_devide + str_enrollNo;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "45"
+                   + str_divide + "Native EnrollmentNumber?" 
+		   + str_2_divide + str_enrollNo;
         str_attach = str_attach + str_value;
         attach_string_totxt(str_attach);
        } 
@@ -3496,10 +3496,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
           }
 
         if (!str_legacy.equals("")){
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "46"
-                   + str_devide + "The common app legacy info?" 
-		   + str_2_devide + str_legacy;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "46"
+                   + str_divide + "The common app legacy info?" 
+		   + str_2_divide + str_legacy;
         str_attach = str_attach + str_value;
         attach_string_totxt(str_attach);
        } 
@@ -3517,10 +3517,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         str_attach = "RQS_1600";
    	   str_client_id = theDoc.valueOf(str_input + "/Common_App_ID");
         if (!str_client_id.equals("")){ 
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "47"
-                   + str_devide + "The common app client ID?" 
-		   + str_2_devide + str_client_id;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "47"
+                   + str_divide + "The common app client ID?" 
+		   + str_2_divide + str_client_id;
         str_attach = str_attach + str_value;
         attach_string_totxt(str_attach);
        } 
@@ -3538,10 +3538,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         str_attach = "RQS_1600";
    	   str_end_date = theDoc.valueOf(str_input + "/CurrAddressToDate");
         if (!str_end_date.equals("")){ 
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "48"
-                   + str_devide + "The common app mailing end date?" 
-		   + str_2_devide + str_end_date;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "48"
+                   + str_divide + "The common app mailing end date?" 
+		   + str_2_divide + str_end_date;
         str_attach = str_attach + str_value;
         attach_string_totxt(str_attach);
        } 
@@ -3563,10 +3563,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
    	   str_schoolname = theDoc.valueOf(str_input + "/SecSchoolName");
 
         if (str_ceeb.equals("000000") && !str_schoolname.equals("")){ 
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "49"
-                   + str_devide + "The none matching highschool name?" 
-		   + str_2_devide + str_schoolname;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "49"
+                   + str_divide + "The none matching highschool name?" 
+		   + str_2_divide + str_schoolname;
         str_attach = str_attach + str_value;
         attach_string_totxt(str_attach);
        } 
@@ -3605,10 +3605,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
    	str_email = theDoc.valueOf(str_name + "/Parent_1_Email");
     
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "51"
-                   + str_devide + "Parent1 Type?" 
-		   + str_2_devide + str_parent_type;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "51"
+                   + str_divide + "Parent1 Type?" 
+		   + str_2_divide + str_parent_type;
 
         if(!str_parent_type.equals("")&& !str_parent_type.equals("Unknown")){
            str_attach = str_attach + str_value;
@@ -3616,60 +3616,60 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
 	 }   
         
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "52"
-                   + str_devide + "Parent1 Same Address?" 
-		   + str_2_devide + str_same_addr;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "52"
+                   + str_divide + "Parent1 Same Address?" 
+		   + str_2_divide + str_same_addr;
         if(!str_same_addr.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	 }   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "53"
-                   + str_devide + "Parent1 Last name?" 
-		   + str_2_devide + str_last_name;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "53"
+                   + str_divide + "Parent1 Last name?" 
+		   + str_2_divide + str_last_name;
         if(!str_last_name.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "54"
-                   + str_devide + "Parent1 First name?" 
-		   + str_2_devide + str_first_name;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "54"
+                   + str_divide + "Parent1 First name?" 
+		   + str_2_divide + str_first_name;
         if(!str_first_name.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "55"
-                   + str_devide + "Parent1 Middle name?" 
-		   + str_2_devide + str_mi;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "55"
+                   + str_divide + "Parent1 Middle name?" 
+		   + str_2_divide + str_mi;
         if(!str_mi.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "56"
-                   + str_devide + "Parent1 Employer?" 
-		   + str_2_devide + str_employer;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "56"
+                   + str_divide + "Parent1 Employer?" 
+		   + str_2_divide + str_employer;
         if(!str_employer.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "57"
-                   + str_devide + "Parent1 Title?" 
-		   + str_2_devide + str_title;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "57"
+                   + str_divide + "Parent1 Title?" 
+		   + str_2_divide + str_title;
         if(!str_title.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3680,10 +3680,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         if(str_education_level.equals("")){
 	   str_education_level = "NULL"; 
 	}   
-	  str_value = str_devide + "AQ"  
-		   + str_devide + "58"
-                   + str_devide + "Parent1 Education Level?" 
-		   + str_2_devide + str_education_level;
+	  str_value = str_divide + "AQ"  
+		   + str_divide + "58"
+                   + str_divide + "Parent1 Education Level?" 
+		   + str_2_divide + str_education_level;
         if(!str_education_level.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3693,10 +3693,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         if(str_degree.equals("")){
 	   str_degree = "NULL"; 
 	}   
-	  str_value = str_devide + "AQ"  
-		   + str_devide + "588"
-                   + str_devide + "Parent1 Degree?" 
-		   + str_2_devide + str_degree;
+	  str_value = str_divide + "AQ"  
+		   + str_divide + "588"
+                   + str_divide + "Parent1 Degree?" 
+		   + str_2_divide + str_degree;
         if(!str_degree.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3704,10 +3704,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
 
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "59"
-                   + str_devide + "Parent1 Email?" 
-		   + str_2_devide + str_email;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "59"
+                   + str_divide + "Parent1 Email?" 
+		   + str_2_divide + str_email;
         if(!str_email.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3745,70 +3745,70 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
    	str_email = theDoc.valueOf(str_name + "/Parent_2_Email");
         
 	   str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "61"
-                   + str_devide + "Parent2 Type?" 
-		   + str_2_devide + str_parent_type;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "61"
+                   + str_divide + "Parent2 Type?" 
+		   + str_2_divide + str_parent_type;
         if(!str_parent_type.equals("")&& !str_parent_type.equals("Unknown")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
         
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "62"
-                   + str_devide + "Parent2 Same Address?" 
-		   + str_2_devide + str_same_addr;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "62"
+                   + str_divide + "Parent2 Same Address?" 
+		   + str_2_divide + str_same_addr;
         if(!str_same_addr.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "63"
-                   + str_devide + "Parent2 Last name?" 
-		   + str_2_devide + str_last_name;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "63"
+                   + str_divide + "Parent2 Last name?" 
+		   + str_2_divide + str_last_name;
         if(!str_last_name.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "64"
-                   + str_devide + "Parent2 First name?" 
-		   + str_2_devide + str_first_name;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "64"
+                   + str_divide + "Parent2 First name?" 
+		   + str_2_divide + str_first_name;
         if(!str_first_name.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "65"
-                   + str_devide + "Parent2 Middle name?" 
-		   + str_2_devide + str_mi;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "65"
+                   + str_divide + "Parent2 Middle name?" 
+		   + str_2_divide + str_mi;
         if(!str_mi.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "66"
-                   + str_devide + "Parent2 Employer?" 
-		   + str_2_devide + str_employer;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "66"
+                   + str_divide + "Parent2 Employer?" 
+		   + str_2_divide + str_employer;
         if(!str_employer.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "67"
-                   + str_devide + "Parent2 Title?" 
-		   + str_2_devide + str_title;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "67"
+                   + str_divide + "Parent2 Title?" 
+		   + str_2_divide + str_title;
         if(!str_title.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3818,10 +3818,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         if(str_education_level.equals("")){
 	   str_education_level = "NULL"; 
 	}   
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "68"
-                   + str_devide + "Parent2 Education Level?" 
-		   + str_2_devide + str_education_level;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "68"
+                   + str_divide + "Parent2 Education Level?" 
+		   + str_2_divide + str_education_level;
         if(!str_education_level.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3833,20 +3833,20 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
         if(str_degree.equals("")){
 	   str_degree = "NULL"; 
 	}   
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "688"
-                   + str_devide + "Parent2 Degree?" 
-		   + str_2_devide + str_degree;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "688"
+                   + str_divide + "Parent2 Degree?" 
+		   + str_2_divide + str_degree;
         if(!str_degree.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
 	}   
            
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "69"
-                   + str_devide + "Parent2 Email?" 
-		   + str_2_devide + str_email;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "69"
+                   + str_divide + "Parent2 Email?" 
+		   + str_2_divide + str_email;
         if(!str_email.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
@@ -3876,10 +3876,10 @@ void process_race_ethn(XMLDocument theDoc, String str_demo) throws Exception
          str_first = "N";
        }
            str_attach = "RQS_1600";
-	   str_value = str_devide + "AQ"  
-		   + str_devide + "70"
-                   + str_devide + "First Generation?" 
-		   + str_2_devide + str_first;
+	   str_value = str_divide + "AQ"  
+		   + str_divide + "70"
+                   + str_divide + "First Generation?" 
+		   + str_2_divide + str_first;
         if(!str_first.equals("")){
            str_attach = str_attach + str_value;
 	   attach_string_totxt(str_attach);
